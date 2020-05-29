@@ -1,6 +1,7 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
     <div class="container">
-        <a class="navbar-brand" href="{{ route('root_path') }}">LARACARTE</a>
+        <a class="navbar-brand" href="{{ route('root_path') }}">{{ config('app.name') }}</a>
+                                                    {{-- ici on peut mettre env('APP_NAME') aulieu de config('app.name') --}}
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01"
             aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
