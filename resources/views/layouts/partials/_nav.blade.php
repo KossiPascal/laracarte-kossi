@@ -8,11 +8,11 @@
 
         <div class="collapse navbar-collapse" id="navbarColor01">
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="{{ route('root_path') }}">Home <span class="sr-only">(current)</span></a>
+                <li class="nav-item {{ setActiveRoot('root_path') }}">
+                    <a class="nav-link" href="{{ route('root_path') }}">Home {!! getCurrentForSrOnly('root_path') !!}</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="{{ route('about_path') }}">About</a>
+                <li class="nav-item {{ setActiveRoot('about_path') }}">
+                    <a class="nav-link" href="{{ route('about_path') }}">About {!! getCurrentForSrOnly('about_path') !!}</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Artisans</a>
@@ -35,7 +35,7 @@
                 </li>
             </ul>
 
-            <ul style="margin-right: 20px;" class="navbar-nav my-2 my-lg-0">
+            <ul class="navbar-nav my-2 my-lg-0">
                 <li class="nav-item">
                     <a class="nav-link" href="#">Login</a>
                 </li>
@@ -53,13 +53,13 @@
 
 
 <nav class="second-nav-bar navbar navbar-expand-lg ">
-    <div class="collapse navbar-collapse" id="navbarColor01">
-        <div class="container">
-           <form class="form-inline ">
+    <div class="container">
+        <ul class="navbar-nav my-2 my-lg-0">
+           <form class="form-inline">
                <input class="form-control mr-sm-2" type="text" placeholder="Search">
                <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
            </form>
-	    </div>
+	    </ul>
 	</div>
 </nav>
 
