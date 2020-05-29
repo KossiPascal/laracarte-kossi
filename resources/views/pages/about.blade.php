@@ -1,4 +1,4 @@
-@extends('layouts.default')
+@extends('layouts.default', ['title' => 'About'])
 
 @section('content')
 <div class="container">
@@ -17,7 +17,8 @@
             </p>
         </div>
     </div>
-    <p>Feel free to help to improve the <a href="#">cource code</a>.</p>
+    <p>Feel free to help to improve the <a href="https://github.com/KossiPascal/laracarte-kossi" target="_blank">cource
+            code</a>.</p>
 
     <hr>
 

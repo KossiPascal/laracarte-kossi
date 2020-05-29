@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="{{ asset('assets/css/main.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/font-awesome-4.7.0/css/font-awesome.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/font-awesome-4.7.0/css/font-awesome.min.css') }}">
-    <title>Laracarte</title>
+    <title>{{ page_title($title ?? '') }}</title>
 </head>
 
 <body>
