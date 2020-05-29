@@ -1,0 +1,20 @@
+* {
+    font-size: 15px;
+    ;
+}
+
+.global-content {
+    margin-top: 0.5em;
+}
+
+.nav-footer {
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    color: bisque;
+}
+
+.nav-footer a {
+    color: yellowgreen;
+}
