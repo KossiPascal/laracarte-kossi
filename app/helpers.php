@@ -1,8 +1,11 @@
 <?php
+
+use Illuminate\Support\Facades\Route;
 if (!function_exists('pageTitle')) {
     function pageTitle($title)
     {
-        $base_title = config('app.name');
+       // $base_title = config('app.name');
+        $base_title=env('APP_NAME');
         if ($title === '') {
             return $base_title;
         } else {

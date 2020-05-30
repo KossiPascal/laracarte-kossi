@@ -19,10 +19,25 @@ class ContactsController extends Controller
     public function store(ContactRequest $request)
     {
         $message = Message::create($request->only('name', 'email', 'message'));
+           /*
+            $when = now()->addMinutes(10);
 
-       Mail::to(config('laracarte.admin_support_email'))
-            ->send(new ContactMessageCreated($message));
+            Mail::to($request->user())
+            ->cc($moreUsers)
+            ->bcc($evenMoreUsers)
+            ->later($when, new OrderShipped($order));
+            */
 
+        Mail::to(config('laracarte.admin_support_email'))
+            ->cc('tsolekos263@yahoo.fr')
+           // ->bcc('kossi.tsolegnagbo@gmail.com')
+            ->queue(new ContactMessageCreated($message));
+
+        /*
+            ->queue(new ContactMessageCreated($message))
+            ->onConnection('sqs')
+            ->onQueue('emails');
+        */
        Flashy::message('Nous vous repondrons dans les plus bref delais', 'http://your-awesome-link.com');
 
        return Redirect::route('root_path');

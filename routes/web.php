@@ -27,5 +27,5 @@ Route::get('/contact','ContactsController@create')->name('contact.path');
 Route::post('/contact','ContactsController@store')->name('contact_path');
 
 Route::get('/test-email', function(){
-   return new ContactMessageCreated('Kossi Tsolegnagbo', 'kossi.tsolegnagbo@aisec.net', 'Merci, voici mon message ic !!!');
+   //return new ContactMessageCreated('Kossi Tsolegnagbo', 'kossi.tsolegnagbo@aisec.net', 'Merci, voici mon message ic !!!');
 });
