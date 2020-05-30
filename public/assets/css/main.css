@@ -18,3 +18,12 @@
 .nav-footer a {
     color: yellowgreen;
 }
+
+
+.has-errors {
+  color: red;
+}
+
+.has-errors input, .has-errors textarea{
+  border: solid 1px red;
+}

@@ -31,8 +31,8 @@
                         <a class="dropdown-item" href="https://larachat.co">Laratchat</a>
                     </div>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
+                <li class="nav-item {{ setActiveRoot('contact_path') }}">
+                    <a class="nav-link" href="{{ route('contact_path') }}">Contact {!! getCurrentForSrOnly('contact_path') !!}</a>
                 </li>
             </ul>
 
